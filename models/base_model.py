@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""This is the base model class for AirBnB"""
+"""This is the base model class for AirBnB
+"""
+
 import uuid
 import models
 from datetime import datetime
@@ -7,7 +9,6 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, DateTime
 
 Base = declarative_base()
-
 
 class BaseModel:
     """This class will defines all common attributes/methods
@@ -74,4 +75,5 @@ class BaseModel:
         my_dict["updated_at"] = self.updated_at.isoformat()
         if "_sa_instance_state" in my_dict.keys():
             del my_dict["_sa_instance_state"]
+
         return my_dict
