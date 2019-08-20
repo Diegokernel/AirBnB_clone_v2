@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ enerates a .tgz archive from the contents of the web_static folder"""
 from fabric.api import *
-from os.path import exist
+from os.path import exists
 env.hosts = ['35.243.178.239', '35.237.166.91']
 
 def do_pack():
