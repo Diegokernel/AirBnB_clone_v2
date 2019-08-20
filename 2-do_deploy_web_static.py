@@ -4,7 +4,6 @@ from fabric.api import *
 from os.path import exist
 env.hosts = ['35.243.178.239', '35.237.166.91']
 
-
 def do_pack():
     """generates a .tgz archive """
     local("mkdir -p ./versions")
